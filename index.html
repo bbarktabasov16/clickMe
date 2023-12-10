@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: rgba(0, 255, 255, 0.3);
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            border: 3px solid rgba(0, 128, 0, 0.514);
+            border-radius: 15px;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            height: 15vw;
+            min-height: 150px;
+            width: 30vw;
+            min-width: 350px;
+        }
+        .text {
+            /* border: 1px solid; */
+            display: flex;
+            justify-content: space-around;
+            width: 23vw;
+            min-width: 230px;
+        }
+        input {
+            width: 10vw;
+            min-width: 130px;
+            height: 1.5vw;
+            min-height: 20px;
+            margin: 0 5px 0 5px;
+            border: 4px double orange;
+            border-radius: 20px;
+            background-color: yellow;
+            text-align: center;
+            margin-top: 2.5vw;
+            color: darkgreen;
+            font-weight: 600;
+        }
+        button {
+            border: 3px solid rgba(0, 0, 139, 0.634);
+            width: 8vw;
+            min-width: 100px;
+            height: 3vw;
+            min-height: 50px;
+            border-radius: 5px;
+            margin-bottom: 2.5vw;
+            background-color: blue;
+            font-size: 15px;
+            color: white;
+            cursor: pointer;
+            box-shadow: 0px 0px 10px black;
+            transition: 0.05s;
+        }
+        button:active {
+            transform: scale(0.95);
+            box-shadow: none;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div id="names">
+        <ul>
+            <li class="tets">Sasha</li>
+            <li class="tets">Nikita</li>
+            <li class="tets">Kisa</li>
+            <li class="tets">Adil</li>
+        </ul>
+    </div>
+    <button onclick="test()">Click</button> -->
+
+
+    <!-- <button onclick="hideCat()">Hide Cat</button>
+    <button onclick="switchCat()">Switch Cat</button>
+    <br>
+    <img id="cat" src="https://images.unsplash.com/photo-1547178270-177ae603f6e2?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""> -->
+    <div class="container">
+        <div class="text">
+            <input id="textOne" type="text" value="Привет" maxlength="15">
+            <input id="textTwo" type="text" value="Name" maxlength="15">
+        </div>
+        <br>
+        <button onclick="switchInput()">Нажми сюда!</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
